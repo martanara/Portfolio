@@ -1,9 +1,3 @@
-import React from "react";
+import { StyledButton } from "./CustomButton.styles";
 
-import "./Footer.scss";
-
-const Footer = () => {
-    return <p>Footer</p>;
-};
-
-export default Footer;
+export default StyledButton;
