@@ -1,23 +1,19 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import About from "./components/pageComponents/About/About";
-import Container from "./components/pageComponents/Container/Container";
-import Contact from "./components/pageComponents/Contact/Contact";
+import Home from "./components/pageComponents/Home/Home";
 import Footer from "./components/pageComponents/Footer/Footer";
 import Navbar from "./components/pageComponents/Navbar/Navbar";
-import Portfolio from "./components/pageComponents/Portfolio/Portfolio";
-import Splash from "./components/pageComponents/Splash/Splash";
+import NotFound from "./components/pageComponents/NotFound/NotFound";
 
 const App = () => {
     return (
         <>
             <Navbar />
-            <Container>
-                <Splash />
-                <About />
-                <Portfolio />
-                <Contact />
-            </Container>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
             <Footer />
         </>
     );
