@@ -5,7 +5,7 @@ interface IButtonProps {
 }
 
 export const StyledButton = styled.button<IButtonProps>`
-    border: 2px solid ${props => props.theme.teal};
+    border: 2px solid ${(props) => props.theme.colors.teal};
     border-radius: 5%;
     background-color: ${(props) => (props.variant === "outline" ? props.theme.colors.white : props.theme.colors.teal)};
     color: ${(props) => (props.variant === "outline" ? props.theme.colors.teal : props.theme.colors.white)};

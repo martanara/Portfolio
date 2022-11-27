@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const theme = {
   colors: {
-    white: "#fffff",
+    white: "#ffff",
     text: "#3E3234",
     teal: "#00C2C2",
     brick: "#FF6050",
