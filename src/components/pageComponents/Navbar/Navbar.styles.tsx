@@ -15,10 +15,6 @@ export const StyledNav = styled.div`
     align-items: center;
     flex-wrap: wrap;
     background: ${(props) => props.theme.colors.teal};
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
 `;
 
 export const StyledNavlink = styled.a`
@@ -59,8 +55,8 @@ export const StyledLogo = styled.a<StyledLogoProps>`
     background-repeat: no-repeat;
     background-size: contain;
     width: 200px;
-    height: 50px;
-    margin: 20px 10px;
+    height: 45px;
+    margin: 15px 10px;
 `;
 
 

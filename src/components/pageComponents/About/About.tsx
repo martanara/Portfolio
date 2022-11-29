@@ -1,14 +1,12 @@
 import React from "react";
 
-import CustomButton from "../../commonComponents/customButton/CustomButton";
-
-import "./About.scss";
+import Button from "../../commonComponents/Button/Button";
 
 const About = () => {
     return (
         <>
             <p>About</p>
-            <CustomButton variant="outline" as="a">Styled Button</CustomButton>
+            <Button variant="outline" as="a">Styled Button</Button>
         </>
     );
 };
