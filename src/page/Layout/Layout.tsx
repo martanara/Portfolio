@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect } from 'react';
-import Wrapper from '../../components/Wrapper';
-import Footer from '../Footer';
-import Navbar from '../Navbar';
+import Wrapper from 'components/Wrapper';
+import Footer from 'page/Footer';
+import Navbar from 'page/Navbar';
 import { useNavigationType, useLocation } from 'react-router-dom';
 
 interface LayoutProps {
