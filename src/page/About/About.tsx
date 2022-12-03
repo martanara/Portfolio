@@ -1,13 +1,16 @@
 import React from "react";
 
 import Button from "../../components/Button/Button";
+import { StyledButton } from "./About.styles";
 
 const About = () => {
     return (
-        <>
+        <React.Fragment>
             <p>About</p>
-            <Button variant="outline" as="a">Styled Button</Button>
-        </>
+            <StyledButton variant="outline" fontColor="yellow">Styled Button</StyledButton>
+            <Button variant="outline">Styled Button</Button>
+            <Button variant="outline">Styled Button</Button>
+        </React.Fragment>
     );
 };
 

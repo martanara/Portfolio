@@ -1,3 +1,9 @@
 import { StyledButton } from "./Button.styles";
 
-export default StyledButton;
+const Button = (props: any) => (
+    <StyledButton className={props.className} fontColor={props.fontColor} variant={props.variant}>
+        {props.children}
+    </StyledButton>
+);
+
+export default Button;

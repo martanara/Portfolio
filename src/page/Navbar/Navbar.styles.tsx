@@ -17,7 +17,7 @@ export const StyledNav = styled.div`
     background: ${(props) => props.theme.colors.teal};
 `;
 
-export const StyledNavlink = styled.a`
+export const StyledNavLink = styled.a`
     padding: 10px 0 10px 40px;
     cursor: pointer;
     text-align: center;
@@ -25,38 +25,41 @@ export const StyledNavlink = styled.a`
     text-transform: uppercase;
     color: ${(props) => props.theme.colors.white};
     font-weight: 700;
+
     &:hover {
         color: ${(props) => props.theme.colors.mustard};
     }
+
     @media (max-width: 768px) {
         padding: 0;
     }
 `;
 
 export const StyledMenu = styled.div<StyledMenuProps>`
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+
     @media (max-width: 768px) {
         display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
-        overflow: hidden;
         flex-direction: column;
         justify-content: space-evenly;
+        overflow: hidden;
+        width: 100%;
         height: 170px;
         transition: max-height 0.3s ease-in;
-        width: 100%;
     }
 `;
 
 export const StyledLogo = styled.a<StyledLogoProps>`
-    background-image: url(${({ img }) => img});
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 200px;
     height: 45px;
     margin: 15px 10px;
+    background-image: url(${({ img }) => img});
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
 `;
 
 

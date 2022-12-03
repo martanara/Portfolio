@@ -9,7 +9,7 @@ export const Navbar = () => {
 
     return (
         <StyledNav>
-            <StyledLogo href="" img="/marta_nara-logo.png"></StyledLogo>
+            <StyledLogo href="" img="/marta_nara-logo.png" />
             <IconButton icon={isOpen ? "xmark" : "bars"} onClick={toggleMenu} />
             <StyledMenu isOpen={isOpen}>
                 <StyledNavLink href="">About</StyledNavLink>

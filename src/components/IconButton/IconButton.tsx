@@ -8,6 +8,10 @@ interface IconButtonProps {
   icon: IconProp;
 }
 
+const defaultProps = {
+    onClick: () => {}
+}
+
 const IconButton = (props: IconButtonProps) => {
     const { onClick, icon } = props;
 
@@ -17,5 +21,7 @@ const IconButton = (props: IconButtonProps) => {
         </StyledIconButton>
     );
 };
+
+IconButton.defaultProps = defaultProps;
 
 export default IconButton;
