@@ -13,6 +13,9 @@ export const StyledSplash = styled.div`
     &span {
       font-weight: 700;
     }
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export const StyledLeftSection = styled.div`
