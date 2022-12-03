@@ -8,10 +8,10 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { GlobalStyle } from "./styles/styles";
 import { theme } from "./styles/styles";
 
-import Home from "./page/Home/Home";
-import Footer from "./page/Footer/Footer";
-import { Navbar } from "./page/Navbar/Navbar";
-import NotFound from "./page/NotFound/NotFound";
+import Home from "./page/Home";
+import Footer from "./page/Footer";
+import Navbar from "./page/Navbar";
+import NotFound from "./page/NotFound";
 
 const App = () => {
     library.add(fas)

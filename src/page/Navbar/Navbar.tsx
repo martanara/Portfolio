@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import IconButton from "../../components/IconButton";
 import { StyledNav, StyledLogo, StyledMenu, StyledNavLink } from "./Navbar.styles";
 
-export const Navbar = () => {
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
@@ -19,3 +19,5 @@ export const Navbar = () => {
         </StyledNav>
     );
 };
+
+export default Navbar;
