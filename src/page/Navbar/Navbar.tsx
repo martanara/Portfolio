@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import IconButton from "../../components/IconButton/IconButton";
+import IconButton from "../../components/IconButton";
 import { StyledNav, StyledLogo, StyledMenu, StyledNavLink } from "./Navbar.styles";
 
 export const Navbar = () => {
