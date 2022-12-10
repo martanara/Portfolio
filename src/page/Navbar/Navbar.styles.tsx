@@ -65,6 +65,7 @@ export const StyledLogo = styled.a<StyledLogoProps>`
 
 export const StyledIconButton = styled(IconButton)`
     display: none;
+    width: 300px;
     
     @media (max-width: 768px) {
         display: flex;

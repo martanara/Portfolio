@@ -7,6 +7,7 @@ interface IconButtonProps {
   onClick?: MouseEventHandler;
   dark?: boolean;
   icon: IconProp;
+  className?: string;
 }
 
 const defaultProps = {
@@ -17,7 +18,7 @@ const IconButton = (props: IconButtonProps) => {
     const { onClick, icon, dark } = props;
 
     return (
-        <StyledIconButton onClick={onClick} dark={dark}>
+        <StyledIconButton className={props.className} onClick={onClick} dark={dark}>
             <FontAwesomeIcon icon={icon} />
         </StyledIconButton>
     );
