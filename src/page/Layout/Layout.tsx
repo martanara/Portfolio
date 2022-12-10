@@ -25,9 +25,7 @@ const Layout = (props: LayoutProps) => {
   return (
     <React.Fragment>
       <Navbar />
-      <Wrapper>
         {props.children}
-      </Wrapper>
       <Footer />
     </React.Fragment>
   );

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Button from "components/Button";
 
-export const StyledButton = styled(Button)`
-    background-color: red;
+export const StyledContainer = styled.div`
+    height: 100vh;
+    background-color: rgba(255, 96, 80, 0.3);
 `;

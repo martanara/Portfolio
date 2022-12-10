@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     background: #ffff;
     color: #3E3234;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
   }
 `
 

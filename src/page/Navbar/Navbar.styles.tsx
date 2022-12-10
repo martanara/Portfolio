@@ -5,10 +5,6 @@ interface StyledMenuProps {
     isOpen: boolean;
 }
 
-interface StyledLogoProps {
-    img: string;
-}
-
 export const StyledNav = styled.div`
     padding: 0 40px;
     display: flex;
@@ -16,6 +12,8 @@ export const StyledNav = styled.div`
     align-items: center;
     flex-wrap: wrap;
     background: ${(props) => props.theme.colors.teal};
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
 `;
 
 export const StyledNavLink = styled.a`
@@ -53,14 +51,9 @@ export const StyledMenu = styled.div<StyledMenuProps>`
     }
 `;
 
-export const StyledLogo = styled.a<StyledLogoProps>`
-    width: 200px;
-    height: 45px;
-    margin: 15px 10px;
-    background-image: url(${({ img }) => img});
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+export const StyledLogo = styled(StyledNavLink)`
+   font-weight: 700;
+   font-size: 20px;
 `;
 
 export const StyledIconButton = styled(IconButton)`

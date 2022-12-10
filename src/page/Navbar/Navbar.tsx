@@ -8,7 +8,9 @@ const Navbar = () => {
 
     return (
         <StyledNav>
-            <StyledLogo href="" img="/marta_nara-logo.png" />
+            <StyledLogo href="">
+                <p>Marta Nara</p>
+            </StyledLogo>
             <StyledIconButton icon={isOpen ? "xmark" : "bars"} onClick={toggleMenu} />
             <StyledMenu isOpen={isOpen}>
                 <StyledNavLink href="">About</StyledNavLink>

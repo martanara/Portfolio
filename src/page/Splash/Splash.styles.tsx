@@ -20,14 +20,13 @@ export const StyledSplash = styled.div`
 
 export const StyledLeftSection = styled.div`
   flex: 1;
-  margin-left: 20px;
 `
 
 export const StyledRightSection = styled.div<StyledRightSectionProps>`
     flex: 2;
     background-image: url(${({ img }) => img});
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     width: 100%;
 `

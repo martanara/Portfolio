@@ -1,19 +1,18 @@
 import React from "react";
 
-import Button from "components/Button";
-import { StyledButton } from "./About.styles";
 import Carousel from "components/Carousel";
+import Wrapper from "components/Wrapper";
+import { StyledContainer } from "./About.styles";
 
 const About = () => {
     return (
         <React.Fragment>
-            <p>About</p>
-            <Carousel />
-            <StyledButton variant="outline" fontColor="yellow">
-                Styled Button
-            </StyledButton>
-            <Button variant="outline">Styled Button</Button>
-            <Button variant="outline">Styled Button</Button>
+            <StyledContainer>
+                <Wrapper>
+                    <h2>01. About</h2>
+                    <Carousel />
+                </Wrapper>
+            </StyledContainer>
         </React.Fragment>
     );
 };
