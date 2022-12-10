@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import IconButton from "components/IconButton";
-import { StyledNav, StyledLogo, StyledMenu, StyledNavLink } from "./Navbar.styles";
+import { StyledNav, StyledLogo, StyledMenu, StyledNavLink, StyledIconButton } from "./Navbar.styles";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +9,7 @@ const Navbar = () => {
     return (
         <StyledNav>
             <StyledLogo href="" img="/marta_nara-logo.png" />
-            <IconButton icon={isOpen ? "xmark" : "bars"} onClick={toggleMenu} />
+            <StyledIconButton icon={isOpen ? "xmark" : "bars"} onClick={toggleMenu} />
             <StyledMenu isOpen={isOpen}>
                 <StyledNavLink href="">About</StyledNavLink>
                 <StyledNavLink href="">Portfolio</StyledNavLink>

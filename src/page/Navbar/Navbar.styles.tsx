@@ -1,3 +1,4 @@
+import IconButton from "components/IconButton";
 import styled from "styled-components";
 
 interface StyledMenuProps {
@@ -60,6 +61,14 @@ export const StyledLogo = styled.a<StyledLogoProps>`
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
+`;
+
+export const StyledIconButton = styled(IconButton)`
+    display: none;
+    
+    @media (max-width: 768px) {
+        display: flex;
+    }
 `;
 
 

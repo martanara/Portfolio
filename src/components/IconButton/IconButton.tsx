@@ -5,6 +5,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface IconButtonProps {
   onClick?: MouseEventHandler;
+  dark?: boolean;
   icon: IconProp;
 }
 
@@ -13,10 +14,10 @@ const defaultProps = {
 }
 
 const IconButton = (props: IconButtonProps) => {
-    const { onClick, icon } = props;
+    const { onClick, icon, dark } = props;
 
     return (
-        <StyledIconButton onClick={onClick}>
+        <StyledIconButton onClick={onClick} dark={dark}>
             <FontAwesomeIcon icon={icon} />
         </StyledIconButton>
     );

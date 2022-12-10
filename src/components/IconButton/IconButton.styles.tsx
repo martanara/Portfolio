@@ -1,11 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const StyledIconButton = styled.div`
-    display: none;
+interface StyledIconButtonProps {
+    dark?: boolean;
+}
+
+export const StyledIconButton = styled.div<StyledIconButtonProps>`
     color: ${(props) => props.theme.colors.white};
     font-size: 27px;
     cursor: pointer;
-    @media (max-width: 768px) {
-        display: flex;
-    }
+    
+    ${(props) => props.dark && css`
+        color: ${(props) => props.theme.colors.text};
+    `};
 `;
