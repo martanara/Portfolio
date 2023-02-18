@@ -9,14 +9,18 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
   }
-`
+`;
 
 export const theme = {
-  colors: {
-    white: "#ffff",
-    text: "#3E3234",
-    teal: "#00C2C2",
-    brick: "#FF6050",
-    mustard: "#FFD00E",
-  }
-}
+    colors: {
+        white: "#ffff",
+        text: "#3E3234",
+        teal: "#00C2C2",
+        brick: "#FF6050",
+        mustard: "#FFD00E",
+    },
+    background: {
+        teal: "#a5d4d4",
+        brick: "#f5b2ab",
+    },
+};

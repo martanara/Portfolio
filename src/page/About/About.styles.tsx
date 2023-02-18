@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledAbout = styled.div`
     padding: 20px 0;
     height: 100vh;
-    background-color: rgba(255, 96, 80, 0.3);
+    background-color: ${(props) => props.theme.background.brick};
     display: flex;
     flex-direction: column;
 `;
