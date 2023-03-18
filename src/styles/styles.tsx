@@ -8,6 +8,11 @@ export const GlobalStyle = createGlobalStyle`
     color: #3E3234;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
+    
+    button, input, select, textarea {
+      font-family: 'Source Sans Pro';
+      outline: none;
+    }
   }
 `;
 
