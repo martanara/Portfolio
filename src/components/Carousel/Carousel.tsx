@@ -1,10 +1,11 @@
 import React from "react";
+
 import { Carousel } from "primereact/carousel";
 import { StyledCarouselItem } from "./Carousel.styles";
 
 const photos = [1, 2, 3, 4, 5, 6, 7, 8];
 
-const CarouselDemo = () => {
+const PrimeCarousel = () => {
     const responsiveOptions = [
         {
             breakpoint: "1024px",
@@ -42,4 +43,4 @@ const CarouselDemo = () => {
     );
 };
 
-export default CarouselDemo;
+export default PrimeCarousel;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
-width: 90%;
-margin: 0 auto;
-`
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+`;
